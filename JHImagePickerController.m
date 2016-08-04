@@ -83,6 +83,8 @@ static BOOL jh_isEditImage = YES;
         }else {
             self.image = info[UIImagePickerControllerOriginalImage];
         }
+        NSString * url = info[UIImagePickerControllerMediaURL];
+        NSLog(@"uuu:%@",url);
         if (self.isCaches == true && self.identifier != nil && ![self.identifier  isEqual: @""]) {
             if ([self.delegate respondsToSelector:@selector(selectImageFinishedAndCaches:cachesIdentifier:isCachesSuccess:)]) {
                 BOOL cachesStatus = [self saveImageToCaches:self.image

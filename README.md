@@ -1,6 +1,18 @@
 # JHUIImagePickerController-For-iOS
 EasyUIImagePickerController for iOS
 
+###update:
+* 1、添加了isEditImage属性，是否设置裁剪，默认为YES。
+
+    `若不需要裁剪图片，则设置该属性。`
+    
+   `_imagePickerController.isEditImage = NO;`
+   
+*   2、修复了一个BUG，该BUG导致设置缓存时触发两个回调代理方法。
+    
+     
+    
+###正文：
 1.声明
 
 `JHImagePickerController * _imagePickerController;`
