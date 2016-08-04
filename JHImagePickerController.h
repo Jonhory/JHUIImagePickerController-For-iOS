@@ -61,7 +61,13 @@ typedef void(^AlbumFail)();
 /**
  *  设置是否缓存 默认为NO
  */
+
 @property (nonatomic,assign) BOOL isCaches;
+
+/**
+ *  设置是否编辑图片，默认为YES.设置为NO时，选择图片的时候不出现裁剪框，返回图片尺寸大小正常。
+ */
+@property (nonatomic,assign) BOOL isEditImage;
 
 /**
  *  设置缓存标识符(缓存的文件名称)

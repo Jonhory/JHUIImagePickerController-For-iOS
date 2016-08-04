@@ -36,6 +36,8 @@
     _imagePickerController = [[JHImagePickerController alloc]initWithIsCaches:YES andIdentifier:@"abc"];
     
     _imagePickerController.delegate = self;
+    //若不需要裁剪图片，则设置该属性。
+//    _imagePickerController.isEditImage = NO;
     
     _imageView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 100, SCREEN.width - 20, SCREEN.height - 280)];
     _imageView.backgroundColor = [UIColor lightGrayColor];

@@ -21,8 +21,14 @@
 
 @end
 
+//是否采用裁剪后的图片
+static BOOL jh_isEditImage = YES;
 
 @implementation JHImagePickerController
+
+- (void)setIsEditImage:(BOOL)isEditImage{
+    jh_isEditImage = isEditImage;
+}
 
 #pragma mark - 初始化方法
 - (instancetype)initWithIsCaches:(BOOL)isCaches andIdentifier:(NSString *)identifier{
@@ -72,7 +78,11 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
     NSString * mediaType = info[UIImagePickerControllerMediaType];
     if (mediaType == (NSString *)kUTTypeImage) {
-        self.image = info[UIImagePickerControllerEditedImage];
+        if (jh_isEditImage) {
+            self.image = info[UIImagePickerControllerEditedImage];
+        }else {
+            self.image = info[UIImagePickerControllerOriginalImage];
+        }
         if (self.isCaches == true && self.identifier != nil && ![self.identifier  isEqual: @""]) {
             if ([self.delegate respondsToSelector:@selector(selectImageFinishedAndCaches:cachesIdentifier:isCachesSuccess:)]) {
                 BOOL cachesStatus = [self saveImageToCaches:self.image
@@ -82,7 +92,7 @@
                                             isCachesSuccess:cachesStatus];
             }
         }
-        if ([self.delegate respondsToSelector:@selector(selectImageFinished:)]) {
+        else if ([self.delegate respondsToSelector:@selector(selectImageFinished:)]) {
             [self.delegate selectImageFinished:self.image];
         }
     }
@@ -163,7 +173,7 @@
     if (_imagePickerController == nil) {
         _imagePickerController = [[UIImagePickerController alloc]init];
         _imagePickerController.delegate = self;
-        _imagePickerController.allowsEditing = YES;
+        _imagePickerController.allowsEditing = jh_isEditImage;
     }
     return _imagePickerController;
 }
