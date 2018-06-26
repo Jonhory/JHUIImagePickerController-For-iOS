@@ -9,6 +9,7 @@
 #import <Photos/Photos.h>
 
 #define jhSCREEN [UIScreen mainScreen].bounds.size
+#define jhPHAuthorized @"jhPHAuthorized"
 
 @interface JHListItem : NSObject
 

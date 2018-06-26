@@ -64,7 +64,7 @@
         case PHAuthorizationStatusNotDetermined:{
             [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    [self getAuthorizePhotoLibrary];
+                    [[NSNotificationCenter defaultCenter] postNotificationName:jhPHAuthorized object:nil];
                 });
             }];
         }

@@ -17,6 +17,7 @@
 @property(nonatomic, strong) NSMutableArray<JHListItem *> *items;
 
 @property(nonatomic, strong) UITableView *tableView;
+@property(nonatomic, strong) UILabel * label;
 
 @end
 
@@ -25,14 +26,25 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     if (self.isFirstEnter && self.isEnablePhoto) {
-        JHImagePhotosVC * vc = [[JHImagePhotosVC alloc]init];
-        vc.item = self.items.firstObject;
-        vc.maxCount = self.listMaxCount;
-        vc.block = self.myBlock;
-        
-        [self.navigationController pushViewController:vc animated:NO];
-        self.isFirstEnter = NO;
+        [self goPhotosVC];
     }
+}
+
+- (void)refresh {
+    self.label.hidden = YES;
+    [self loadImageDatas];
+    [self loadTableView];
+    [self goPhotosVC];
+}
+
+- (void)goPhotosVC {
+    JHImagePhotosVC * vc = [[JHImagePhotosVC alloc]init];
+    vc.item = self.items.firstObject;
+    vc.maxCount = self.listMaxCount;
+    vc.block = self.myBlock;
+    
+    [self.navigationController pushViewController:vc animated:NO];
+    self.isFirstEnter = NO;
 }
 
 - (void)viewDidLoad {
@@ -50,6 +62,8 @@
     } else {
         [self showUnablePhoto];
     }
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:jhPHAuthorized object:nil];
 }
 
 #pragma mark - Touch
@@ -144,6 +158,7 @@
     label.font = [UIFont systemFontOfSize:14];
     [label sizeToFit];
     [self.view addSubview:label];
+    self.label = label;
 }
 
 - (NSMutableArray<JHListItem *> *)items {
