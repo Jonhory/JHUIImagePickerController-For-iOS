@@ -9,6 +9,7 @@
 #import "NextViewController.h"
 
 #import "JHImagePickerController.h"
+#import "JHImageTool.h"
 
 #define SCREEN [UIScreen mainScreen].bounds.size
 
@@ -23,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"sdlfalksdfklasdj");
     self.view.backgroundColor = [UIColor whiteColor];
     
     //初始化方法一
@@ -62,11 +64,18 @@
         }];
     }];
     UIAlertAction * photoAction = [UIAlertAction actionWithTitle:@"图片" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [_imagePickerController selectImageFromAlbumSuccess:^(UIImagePickerController *imagePickerController) {
-            [self presentViewController:imagePickerController animated:YES completion:nil];
-        } fail:^{
-            NSLog(@"无法获取相簿权限");
+        NSLog(@"无法获取相机权限");
+        [JHImageTool presentPhotoVC:self maxCount:3 completeHandler:^(NSMutableArray<JHPhotoItem *> *images) {
+            JHPhotoItem * item = images[0];
+            [item originalImage:^(UIImage *original) {
+                _imageView.image = original;
+            }];
         }];
+//        [_imagePickerController selectImageFromAlbumSuccess:^(UIImagePickerController *imagePickerController) {
+//            [self presentViewController:imagePickerController animated:YES completion:nil];
+//        } fail:^{
+//            NSLog(@"无法获取相簿权限");
+//        }];
     }];
     UIAlertAction * cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     }];

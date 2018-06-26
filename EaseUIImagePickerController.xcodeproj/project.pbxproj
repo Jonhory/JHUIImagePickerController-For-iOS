@@ -13,11 +13,28 @@
 		89B9BA981D0EE9BC007AF0CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B9BA961D0EE9BC007AF0CF /* Main.storyboard */; };
 		89B9BA9A1D0EE9BC007AF0CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89B9BA991D0EE9BC007AF0CF /* Assets.xcassets */; };
 		89B9BA9D1D0EE9BC007AF0CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B9BA9B1D0EE9BC007AF0CF /* LaunchScreen.storyboard */; };
-		89B9BAA61D0EE9F4007AF0CF /* JHImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B9BAA51D0EE9F4007AF0CF /* JHImagePickerController.m */; };
 		89B9BAA91D0EF673007AF0CF /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B9BAA81D0EF673007AF0CF /* NextViewController.m */; };
+		BB7151AC20E24A8500FD7446 /* JHImagePhotosCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB71519620E24A8300FD7446 /* JHImagePhotosCell.m */; };
+		BB7151AD20E24A8500FD7446 /* JHImagePhotosBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BB71519820E24A8400FD7446 /* JHImagePhotosBar.m */; };
+		BB7151AE20E24A8500FD7446 /* JHImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB71519B20E24A8400FD7446 /* JHImagePickerController.m */; };
+		BB7151AF20E24A8500FD7446 /* JHImagePhotosVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB71519D20E24A8400FD7446 /* JHImagePhotosVC.m */; };
+		BB7151B020E24A8500FD7446 /* JHImageListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB71519F20E24A8400FD7446 /* JHImageListCell.m */; };
+		BB7151B120E24A8500FD7446 /* JHImageListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7151A020E24A8400FD7446 /* JHImageListVC.m */; };
+		BB7151B220E24A8500FD7446 /* JHImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7151A220E24A8400FD7446 /* JHImageTool.m */; };
+		BB7151B320E24A8500FD7446 /* jh_defaultIV@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7151A420E24A8500FD7446 /* jh_defaultIV@3x.png */; };
+		BB7151B420E24A8500FD7446 /* jh_defaultIV@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7151A520E24A8500FD7446 /* jh_defaultIV@2x.png */; };
+		BB7151B520E24A8500FD7446 /* jh_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7151A620E24A8500FD7446 /* jh_selected@3x.png */; };
+		BB7151B620E24A8500FD7446 /* jh_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7151A720E24A8500FD7446 /* jh_selected@2x.png */; };
+		BB7151B720E24A8500FD7446 /* jh_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7151A820E24A8500FD7446 /* jh_select@2x.png */; };
+		BB7151B820E24A8500FD7446 /* jh_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7151A920E24A8500FD7446 /* jh_select@3x.png */; };
+		BB7151B920E24A8500FD7446 /* jh_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7151AA20E24A8500FD7446 /* jh_arrow@2x.png */; };
+		BB7151BA20E24A8500FD7446 /* jh_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7151AB20E24A8500FD7446 /* jh_back@2x.png */; };
+		F1FF1E041564391A38051664 /* libPods-EaseUIImagePickerController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C32A054CD26549320ADBDA57 /* libPods-EaseUIImagePickerController.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A14BE388822C03AE5C8AD51 /* Pods-EaseUIImagePickerController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EaseUIImagePickerController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EaseUIImagePickerController/Pods-EaseUIImagePickerController.debug.xcconfig"; sourceTree = "<group>"; };
+		89355304ED325227D74DE74F /* Pods-EaseUIImagePickerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EaseUIImagePickerController.release.xcconfig"; path = "Pods/Target Support Files/Pods-EaseUIImagePickerController/Pods-EaseUIImagePickerController.release.xcconfig"; sourceTree = "<group>"; };
 		89B9BA8A1D0EE9BC007AF0CF /* EaseUIImagePickerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EaseUIImagePickerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B9BA8E1D0EE9BC007AF0CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		89B9BA901D0EE9BC007AF0CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,10 +45,31 @@
 		89B9BA991D0EE9BC007AF0CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89B9BA9C1D0EE9BC007AF0CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89B9BA9E1D0EE9BC007AF0CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89B9BAA41D0EE9F4007AF0CF /* JHImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHImagePickerController.h; sourceTree = "<group>"; };
-		89B9BAA51D0EE9F4007AF0CF /* JHImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHImagePickerController.m; sourceTree = "<group>"; };
 		89B9BAA71D0EF673007AF0CF /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		89B9BAA81D0EF673007AF0CF /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		BB71519520E24A8300FD7446 /* JHImagePhotosBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHImagePhotosBar.h; sourceTree = "<group>"; };
+		BB71519620E24A8300FD7446 /* JHImagePhotosCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHImagePhotosCell.m; sourceTree = "<group>"; };
+		BB71519720E24A8400FD7446 /* JHImageListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHImageListVC.h; sourceTree = "<group>"; };
+		BB71519820E24A8400FD7446 /* JHImagePhotosBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHImagePhotosBar.m; sourceTree = "<group>"; };
+		BB71519920E24A8400FD7446 /* JHImagePhotosVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHImagePhotosVC.h; sourceTree = "<group>"; };
+		BB71519A20E24A8400FD7446 /* JHImageListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHImageListCell.h; sourceTree = "<group>"; };
+		BB71519B20E24A8400FD7446 /* JHImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHImagePickerController.m; sourceTree = "<group>"; };
+		BB71519C20E24A8400FD7446 /* JHImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHImageTool.h; sourceTree = "<group>"; };
+		BB71519D20E24A8400FD7446 /* JHImagePhotosVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHImagePhotosVC.m; sourceTree = "<group>"; };
+		BB71519E20E24A8400FD7446 /* JHImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHImagePickerController.h; sourceTree = "<group>"; };
+		BB71519F20E24A8400FD7446 /* JHImageListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHImageListCell.m; sourceTree = "<group>"; };
+		BB7151A020E24A8400FD7446 /* JHImageListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHImageListVC.m; sourceTree = "<group>"; };
+		BB7151A120E24A8400FD7446 /* JHImagePhotosCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHImagePhotosCell.h; sourceTree = "<group>"; };
+		BB7151A220E24A8400FD7446 /* JHImageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHImageTool.m; sourceTree = "<group>"; };
+		BB7151A420E24A8500FD7446 /* jh_defaultIV@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jh_defaultIV@3x.png"; sourceTree = "<group>"; };
+		BB7151A520E24A8500FD7446 /* jh_defaultIV@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jh_defaultIV@2x.png"; sourceTree = "<group>"; };
+		BB7151A620E24A8500FD7446 /* jh_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jh_selected@3x.png"; sourceTree = "<group>"; };
+		BB7151A720E24A8500FD7446 /* jh_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jh_selected@2x.png"; sourceTree = "<group>"; };
+		BB7151A820E24A8500FD7446 /* jh_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jh_select@2x.png"; sourceTree = "<group>"; };
+		BB7151A920E24A8500FD7446 /* jh_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jh_select@3x.png"; sourceTree = "<group>"; };
+		BB7151AA20E24A8500FD7446 /* jh_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jh_arrow@2x.png"; sourceTree = "<group>"; };
+		BB7151AB20E24A8500FD7446 /* jh_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jh_back@2x.png"; sourceTree = "<group>"; };
+		C32A054CD26549320ADBDA57 /* libPods-EaseUIImagePickerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EaseUIImagePickerController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,19 +77,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1FF1E041564391A38051664 /* libPods-EaseUIImagePickerController.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		464CB816733D77334A7F466A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C32A054CD26549320ADBDA57 /* libPods-EaseUIImagePickerController.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		89B9BA811D0EE9BC007AF0CF = {
 			isa = PBXGroup;
 			children = (
-				89B9BAA41D0EE9F4007AF0CF /* JHImagePickerController.h */,
-				89B9BAA51D0EE9F4007AF0CF /* JHImagePickerController.m */,
+				BB71519420E24A5B00FD7446 /* JHImagePicker */,
 				89B9BA8C1D0EE9BC007AF0CF /* EaseUIImagePickerController */,
 				89B9BA8B1D0EE9BC007AF0CF /* Products */,
+				EE2DB9AE185312312D642CAE /* Pods */,
+				464CB816733D77334A7F466A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +137,52 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BB71519420E24A5B00FD7446 /* JHImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				BB71519A20E24A8400FD7446 /* JHImageListCell.h */,
+				BB71519F20E24A8400FD7446 /* JHImageListCell.m */,
+				BB71519720E24A8400FD7446 /* JHImageListVC.h */,
+				BB7151A020E24A8400FD7446 /* JHImageListVC.m */,
+				BB71519520E24A8300FD7446 /* JHImagePhotosBar.h */,
+				BB71519820E24A8400FD7446 /* JHImagePhotosBar.m */,
+				BB7151A120E24A8400FD7446 /* JHImagePhotosCell.h */,
+				BB71519620E24A8300FD7446 /* JHImagePhotosCell.m */,
+				BB71519920E24A8400FD7446 /* JHImagePhotosVC.h */,
+				BB71519D20E24A8400FD7446 /* JHImagePhotosVC.m */,
+				BB71519E20E24A8400FD7446 /* JHImagePickerController.h */,
+				BB71519B20E24A8400FD7446 /* JHImagePickerController.m */,
+				BB7151A320E24A8500FD7446 /* JHImages */,
+				BB71519C20E24A8400FD7446 /* JHImageTool.h */,
+				BB7151A220E24A8400FD7446 /* JHImageTool.m */,
+			);
+			path = JHImagePicker;
+			sourceTree = "<group>";
+		};
+		BB7151A320E24A8500FD7446 /* JHImages */ = {
+			isa = PBXGroup;
+			children = (
+				BB7151A420E24A8500FD7446 /* jh_defaultIV@3x.png */,
+				BB7151A520E24A8500FD7446 /* jh_defaultIV@2x.png */,
+				BB7151A620E24A8500FD7446 /* jh_selected@3x.png */,
+				BB7151A720E24A8500FD7446 /* jh_selected@2x.png */,
+				BB7151A820E24A8500FD7446 /* jh_select@2x.png */,
+				BB7151A920E24A8500FD7446 /* jh_select@3x.png */,
+				BB7151AA20E24A8500FD7446 /* jh_arrow@2x.png */,
+				BB7151AB20E24A8500FD7446 /* jh_back@2x.png */,
+			);
+			path = JHImages;
+			sourceTree = "<group>";
+		};
+		EE2DB9AE185312312D642CAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A14BE388822C03AE5C8AD51 /* Pods-EaseUIImagePickerController.debug.xcconfig */,
+				89355304ED325227D74DE74F /* Pods-EaseUIImagePickerController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89B9BAA11D0EE9BC007AF0CF /* Build configuration list for PBXNativeTarget "EaseUIImagePickerController" */;
 			buildPhases = (
+				8DB9D57C7C22427D1F3832AD /* [CP] Check Pods Manifest.lock */,
 				89B9BA861D0EE9BC007AF0CF /* Sources */,
 				89B9BA871D0EE9BC007AF0CF /* Frameworks */,
 				89B9BA881D0EE9BC007AF0CF /* Resources */,
+				058256D2C6B04F94BE422616 /* [CP] Embed Pods Frameworks */,
+				C0860033F3C8C054FB2FD1DC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -119,6 +216,7 @@
 				TargetAttributes = {
 					89B9BA891D0EE9BC007AF0CF = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 4EHUQSUYU5;
 					};
 				};
 			};
@@ -146,23 +244,88 @@
 			buildActionMask = 2147483647;
 			files = (
 				89B9BA9D1D0EE9BC007AF0CF /* LaunchScreen.storyboard in Resources */,
+				BB7151B820E24A8500FD7446 /* jh_select@3x.png in Resources */,
 				89B9BA9A1D0EE9BC007AF0CF /* Assets.xcassets in Resources */,
+				BB7151B520E24A8500FD7446 /* jh_selected@3x.png in Resources */,
+				BB7151B620E24A8500FD7446 /* jh_selected@2x.png in Resources */,
+				BB7151B320E24A8500FD7446 /* jh_defaultIV@3x.png in Resources */,
 				89B9BA981D0EE9BC007AF0CF /* Main.storyboard in Resources */,
+				BB7151B720E24A8500FD7446 /* jh_select@2x.png in Resources */,
+				BB7151B920E24A8500FD7446 /* jh_arrow@2x.png in Resources */,
+				BB7151B420E24A8500FD7446 /* jh_defaultIV@2x.png in Resources */,
+				BB7151BA20E24A8500FD7446 /* jh_back@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		058256D2C6B04F94BE422616 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EaseUIImagePickerController/Pods-EaseUIImagePickerController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DB9D57C7C22427D1F3832AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EaseUIImagePickerController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0860033F3C8C054FB2FD1DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EaseUIImagePickerController/Pods-EaseUIImagePickerController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		89B9BA861D0EE9BC007AF0CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB7151B020E24A8500FD7446 /* JHImageListCell.m in Sources */,
+				BB7151B220E24A8500FD7446 /* JHImageTool.m in Sources */,
+				BB7151AE20E24A8500FD7446 /* JHImagePickerController.m in Sources */,
 				89B9BAA91D0EF673007AF0CF /* NextViewController.m in Sources */,
 				89B9BA951D0EE9BC007AF0CF /* ViewController.m in Sources */,
 				89B9BA921D0EE9BC007AF0CF /* AppDelegate.m in Sources */,
 				89B9BA8F1D0EE9BC007AF0CF /* main.m in Sources */,
-				89B9BAA61D0EE9F4007AF0CF /* JHImagePickerController.m in Sources */,
+				BB7151B120E24A8500FD7446 /* JHImageListVC.m in Sources */,
+				BB7151AD20E24A8500FD7446 /* JHImagePhotosBar.m in Sources */,
+				BB7151AC20E24A8500FD7446 /* JHImagePhotosCell.m in Sources */,
+				BB7151AF20E24A8500FD7446 /* JHImagePhotosVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -237,6 +401,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -274,24 +439,28 @@
 		};
 		89B9BAA21D0EE9BC007AF0CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A14BE388822C03AE5C8AD51 /* Pods-EaseUIImagePickerController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4EHUQSUYU5;
 				INFOPLIST_FILE = EaseUIImagePickerController/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jonhory.EaseUIImagePickerController;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonhory.EaseUIImagePickerController-oc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		89B9BAA31D0EE9BC007AF0CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89355304ED325227D74DE74F /* Pods-EaseUIImagePickerController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4EHUQSUYU5;
 				INFOPLIST_FILE = EaseUIImagePickerController/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jonhory.EaseUIImagePickerController;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonhory.EaseUIImagePickerController-oc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

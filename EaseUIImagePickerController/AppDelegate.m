@@ -18,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    NSLog(@"gogo");
+    printf("xxx");
+    
     UINavigationController * vc = [[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]];
     self.window.rootViewController = vc;
     [self.window makeKeyWindow];
